@@ -48,7 +48,7 @@
             }
 
             try {
-                const response = await fetch(`http://localhost:5000/api/products/${productId}`);
+                const response = await fetch(`https://chiccart-api.onrender.com/api/products/${productId}`);
                 if (!response.ok) { throw new Error('Product not found'); }
                 const product = await response.json();
 

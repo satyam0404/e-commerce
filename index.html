@@ -181,7 +181,7 @@
 
             // Fetches product data from the server and displays it
             async function fetchAndDisplayProducts() {
-                const apiUrl = 'http://localhost:5000/api/products';
+                const apiUrl = 'https://chiccart-api.onrender.com/api/products';
                 try {
                     const response = await fetch(apiUrl);
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);

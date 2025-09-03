@@ -80,7 +80,7 @@
         try {
             // Create an array of fetch requests
             const fetchPromises = cart.map(item => {
-                return fetch(`http://localhost:5000/api/products/${item.id}`).then(res => res.json());
+                return fetch(`https://chiccart-api.onrender.com/api/products/${item.id}`).then(res => res.json());
             });
 
             // Wait for all requests to complete
